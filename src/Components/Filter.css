@@ -1,0 +1,12 @@
+html,
+body {
+    background-color: #110d22;
+    color: #fefefe;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title{
+    color: white
+}
