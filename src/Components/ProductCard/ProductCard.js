@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProductCard.css'
 import { Card, Button } from 'react-bootstrap';
-import productImage from '../Image/ProductImage.png'
+import productImage from '../../Image/ProductImage.png'
 
 const ProductCard = () => {
     return (

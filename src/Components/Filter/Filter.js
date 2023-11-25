@@ -7,7 +7,7 @@ const Filter = () => {
             <form className="d-flex flex-column col" action="/action_page.php" method="get">
                 <div className="inputs d-flex flex-row justify-content-between">
                     <div className="place-select col-5">
-                        <h5 className="card-title" >Место</h5>
+                        <h5 className="card-title" style = {{color: "white"}}>Место</h5>
                         <select className="custom-select">
                             <option selected>Все</option>
                             <option value="1">Место 1</option>
@@ -15,7 +15,7 @@ const Filter = () => {
                         </select>
                     </div>
                     <div className="price-select col-4">
-                        <h5 className="card-title">Цена</h5>
+                        <h5 className="card-title" style = {{color: "white"}}>Цена</h5>
                         <div className="pricecontainer d-flex flex-column">
                             {/* min max */}
                             <label htmlFor="minprice">Мин</label>

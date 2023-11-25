@@ -7,6 +7,10 @@ body {
     flex-direction: column;
 }
 
+.card{
+    margin: 5px
+}
+
 .card-title{
-    color: white
+    color: white;
 }
