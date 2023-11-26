@@ -3,7 +3,7 @@ import React from "react";
 
 let RightCart = () => {
     return (
-        <div className="right-cart col-3 mt-3" style={{display: "flex", justifyContent: "center"}}>
+        <div className="right-cart col-3 mt-3" style={{display: "flex", justifyContent: "start", paddingTop: "16px"}}>
             <div style = {{display: "flex", justifyContent: "space-between"}}>
                      <span style={{ color: '#ECECEC', textAlign: 'center', fontFamily: 'Inter', fontSize: '24px', fontStyle: 'normal', fontWeight: '700', lineHeight: '32px' }}>
                         Итого:

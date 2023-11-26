@@ -1,27 +1,29 @@
 import React from 'react';
+import { Navbar, Nav, NavItem, Badge } from 'react-bootstrap';
 
-const Navbar = () => {
+const SDUNavbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a className="navbar-brand" href="#">SDU-Eats</a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div className="navbar-nav">
-                    <a className="nav-item nav-link active" href="#">Меню <span className="sr-only">(current)</span></a>
-                    <a className="nav-item nav-link" href="#">Места</a>
-                    <a className="nav-item nav-link" href="#">Акции</a>
-                </div>
-            </div>
+        <Navbar bg="dark" expand="lg" variant="dark">
+            <Navbar.Brand href="#" style = {{marginLeft: "20px"}}>SDU-Januya</Navbar.Brand>
+            <Navbar.Toggle aria-controls="navbarNavAltMarkup" />
+            <Navbar.Collapse id="navbarNavAltMarkup">
+                <Nav className="mr-auto">
+                    <Nav.Link href="#">Меню</Nav.Link>
+                    <Nav.Link href="#">Места</Nav.Link>
+                    <Nav.Link href="#">Акции</Nav.Link>
+                </Nav>
+            </Navbar.Collapse>
 
-            <div className="navbar-nav">
-                <a className="nav-item nav-link" href="#">Корзина <span className="badge badge-light">0</span></a>
-                <a className="nav-item nav-link" href="#">Профиль</a>
-            </div>
-        </nav>
+            <Nav>
+                <NavItem>
+                    <Nav.Link href="#">Корзина <Badge variant="light">0</Badge></Nav.Link>
+                </NavItem>
+                <NavItem>
+                    <Nav.Link href="#" style = {{marginRight: "20px"}}>Профиль</Nav.Link>
+                </NavItem>
+            </Nav>
+        </Navbar>
     );
 };
 
-export default Navbar;
+export default SDUNavbar;

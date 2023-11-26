@@ -7,18 +7,21 @@ import Detail from "./Components/Detail/Detail";
 import Cart from './Components/Cart/Cart'
 import Receipt from "./Components/Receipt/Receipt";
 import Checkout from "./Components/Checkout/Checkout";
+import OrderDetails from "./Components/OrderDetails/OrderDetails";
+import SDUNavbar from "./Components/NavBar/Navbar";
 
 let App = () => {
   return (
       <>
-          <Navbar/>
+          <SDUNavbar/>
           {/* <Filter/>
           <ProductCard/>
           <Detail/>
           <Cart/>
           <Receipt/>
-          */}
           <Checkout/>
+          */}
+          <OrderDetails/>
       </>
   );
 }
