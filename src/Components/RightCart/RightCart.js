@@ -1,7 +1,6 @@
 import {Button} from "react-bootstrap";
 import React from "react";
-
-let RightCart = () => {
+let RightCart = ({status}) => {
     return (
         <div className="right-cart col-3 mt-3" style={{display: "flex", justifyContent: "start", paddingTop: "16px"}}>
             <div style = {{display: "flex", justifyContent: "space-between"}}>
@@ -30,7 +29,7 @@ let RightCart = () => {
 
                     }}
                 >
-                    Оформить заказ
+                    {status}
                 </Button>
             </div>
         </div>

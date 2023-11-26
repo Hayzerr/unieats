@@ -10,12 +10,46 @@ import Checkout from "./Components/Checkout/Checkout";
 import OrderDetails from "./Components/OrderDetails/OrderDetails";
 import SDUNavbar from "./Components/NavBar/Navbar";
 import ProductsUi from "./Components/ProductsUi/ProductsUi";
+import {
+    createBrowserRouter,
+    RouterProvider
+} from "react-router-dom";
 
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <>
+            <SDUNavbar />
+            <ProductsUi />
+        </>,
+    },
+    {
+        path: "/product-detail/:id",
+        element: <>
+            <SDUNavbar />
+            <Detail />
+        </>
+    },
+    {
+        path: "/cart",
+        element: <>
+            <SDUNavbar/>
+            <Cart/>
+        </>
+    },
+    {
+        path: "/cart/confirmation",
+        element: <>
+            <SDUNavbar />
+            <Checkout />
+        </>
+    }
+]);
 let App = () => {
-  return (
-      <>
-          <SDUNavbar/>
-          {/* <Filter/>
+    return (
+        <RouterProvider router={router}>
+            {/*<SDUNavbar/>*/}
+            {/* <Filter/>
           <ProductCard/>
           <Detail/>
           <Cart/>
@@ -23,9 +57,10 @@ let App = () => {
           <Checkout/>
           <OrderDetails/>
           */}
-          <ProductsUi/>
-      </>
-  );
+            {/*<ProductsUi/>*/}
+
+        </RouterProvider>
+    );
 }
 
 export default App;

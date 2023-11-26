@@ -26,8 +26,10 @@ const Checkout = () => {
     ]
 
     const addresses = [
-        {name: "1 Этаж блок H кабинет 104"},
-        {name: "Адресс любой"}
+        {name: "AC cafeteria Блок H"},
+        {name: "AC cafeteria Блок F"},
+        {name: "Belka Food Блок F"},
+        {name: "Doner House Блок F"},
     ]
     const handleAddressSelection = (address) => {
         setSelectedAddress(address);
@@ -47,7 +49,7 @@ const Checkout = () => {
 
                 <div className="row" style={{ fontFamily: 'Inter', textAlign: 'center' }}>
                     <div className="col-4">
-                        <span className="text-center" style = {{color: "white"}}>Корзина</span>
+                        <a className="text-center" style = {{color: "white"}} href="http://localhost:3000/cart">Корзина</a>
                         <hr className="bg-secondary mt-1" style = {{color: "white"}}/>
                     </div>
                     <div className="col-4 text-success">
@@ -175,11 +177,10 @@ const Checkout = () => {
                     </div>
 
                     {/* Add a button to submit the order */}
-                    <button className="btn" onClick={() => console.log('Order Submitted')}>Оформить заказ</button>
                 </div>
 
             </div>
-            <RightCart/>
+            <RightCart status="Оформить заказ"/>
         </div>
     );
 };
