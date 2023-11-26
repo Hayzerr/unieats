@@ -9,6 +9,7 @@ import Receipt from "./Components/Receipt/Receipt";
 import Checkout from "./Components/Checkout/Checkout";
 import OrderDetails from "./Components/OrderDetails/OrderDetails";
 import SDUNavbar from "./Components/NavBar/Navbar";
+import ProductsUi from "./Components/ProductsUi/ProductsUi";
 
 let App = () => {
   return (
@@ -20,8 +21,9 @@ let App = () => {
           <Cart/>
           <Receipt/>
           <Checkout/>
-          */}
           <OrderDetails/>
+          */}
+          <ProductsUi/>
       </>
   );
 }
