@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './ProductCard.css'
 import {Card, Button} from 'react-bootstrap';
 import {useKeycloak} from "@react-keycloak/web";
+import Banana from '../../Image/Banana.png'
 
 const ProductCard = ({id, name, location, price, count, productImage}) => {
     const [counter, setCounter] = useState(0);
@@ -10,7 +11,7 @@ const ProductCard = ({id, name, location, price, count, productImage}) => {
 
     return (
         <Card bg="dark" style={{width: '16rem'}}>
-            <Card.Img variant="top" src={productImage}
+            <Card.Img variant="top" src={productImage ? productImage : Banana}
                       style={{height: "230px", objectFit: "cover", objectPosition: "0% 77%"}}/>
             <Card.Body>
                 <Card.Title className="title" style={{fontSize: "20px", color: "white", display: "flex", justifyContent: "center"}}>{name}</Card.Title>
