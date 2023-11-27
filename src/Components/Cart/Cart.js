@@ -18,33 +18,35 @@ const Cart = () => {
     ]
 
     return (
-        <div className="content container-fluid d-flex flex-row justify-content-between align-items-center">
-            <div className="left-cart col-6 mt-3" style = {{width: "70%"}}>
+        <div className="content container-fluid d-flex flex-row justify-content-between align-items-top">
+            <div className="left-cart col-6 mt-3" style={{width: "70%"}}>
                 <div className="row" style={{fontFamily: 'Inter', textAlign: 'center'}}>
                     <div className="col-4 text-success">
                         <span className="text-center">Корзина</span>
                         <hr className="bg-success mt-1"/>
                     </div>
                     <div className="col-4">
-                        <a className="text-center" style={{color: "white"}} href="http://localhost:3000/cart/confirmation">Оформление</a>
+                        <a className="text-center" style={{color: "white"}}
+                           href="http://localhost:3000/cart/confirmation">Оформление</a>
                         <hr style={{color: "white"}} className="bg-secondary mt-1"/>
                     </div>
                     <div className="col-4">
-                        <a className="text-center" style={{color: "white"}} href="http://localhost:3000/cart/status">Заказ принят</a>
+                        <a className="text-center" style={{color: "white"}} href="http://localhost:3000/cart/status">Заказ
+                            принят</a>
                         <hr style={{color: "white"}} className="bg-secondary mt-1"/>
                     </div>
                 </div>
                 <div style={{display: "flex", flexWrap: "wrap"}}>
                     {data.map((order) => (
                         <div style={{marginLeft: "5px"}}>
-                            <ProductCard name={order.name} location={order.location} price={order.price} id={order.id} productImage={order.productImage}/>
+                            <ProductCard name={order.name} location={order.location} price={order.price} id={order.id}
+                                         productImage={order.productImage}/>
                         </div>
                     ))}
                 </div>
             </div>
             {/* Cart item */}
-
-            <RightCart status="Дальше"/>
+                <RightCart  status="Дальше"/>
         </div>
     );
 };

@@ -48,7 +48,7 @@ let ProductsUi = () => {
                         .product_dto_list
                         .map(i =>
                             <div className="product-card">
-                                <ProductCard name={i.name} location={i.location} price={i.price} id={i.id}/>
+                                <ProductCard productImage={i.image_url} name={i.name} location={i.location} price={i.price} id={i.id}/>
                             </div>
                         )
                 }

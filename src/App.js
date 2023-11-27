@@ -14,6 +14,7 @@ import {
     createBrowserRouter,
     RouterProvider
 } from "react-router-dom";
+import PlaceCards from "./Components/ProductCards/PlaceCards";
 
 const router = createBrowserRouter([
     {
@@ -42,6 +43,20 @@ const router = createBrowserRouter([
         element: <>
             <SDUNavbar />
             <Checkout />
+        </>
+    },
+    {
+        path: "/cart/confirmation/cheque",
+        element: <>
+            <SDUNavbar />
+            <Receipt />
+        </>
+    },
+    {
+        path: "/places",
+        element: <>
+            <SDUNavbar />
+            <PlaceCards />
         </>
     }
 ]);

@@ -8,7 +8,7 @@ let RightCart = ({status}) => {
                         Итого:
                     </span>
                 <span style={{ color: '#ECECEC', textAlign: 'center', fontFamily: 'Inter', fontSize: '24px', fontStyle: 'normal', fontWeight: '700', lineHeight: '32px'}}>
-                        5800
+                        2760
                      </span>
             </div>
 
@@ -26,8 +26,8 @@ let RightCart = ({status}) => {
                         lineHeight: 'normal',
                         borderRadius: '30px',
                         background: '#00FFA4'
-
                     }}
+                    href = {status == "Оформить заказ" ? "http://localhost:3000/cart/confirmation/cheque" : "http://localhost:3000/cart/confirmation"}
                 >
                     {status}
                 </Button>

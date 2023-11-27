@@ -12,7 +12,7 @@ const SDUNavbar = () => {
             <Navbar.Collapse id="navbarNavAltMarkup">
                 <Nav className="mr-auto">
                     <Nav.Link href="http://localhost:3000/">Меню</Nav.Link>
-                    <Nav.Link href="#">Места</Nav.Link>
+                    <Nav.Link href="/places">Места</Nav.Link>
                     <Nav.Link href="#">Акции</Nav.Link>
                 </Nav>
                 <Nav>

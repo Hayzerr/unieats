@@ -5,9 +5,9 @@ import {useKeycloak} from "@react-keycloak/web";
 import Banana from '../../Image/Banana.png'
 
 const ProductCard = ({id, name, location, price, count, productImage}) => {
-    const [counter, setCounter] = useState(0);
+    const [counter, setCounter] = useState(1);
     const {keycloak, initialized} = useKeycloak()
-    console.log(keycloak)
+    console.log(productImage)
 
     return (
         <Card bg="dark" style={{width: '16rem'}}>
